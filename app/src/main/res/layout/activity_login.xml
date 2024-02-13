@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EEEC"
+    tools:context=".Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/top_background1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Welcome\n Back"
+                android:textColor="#EA6D35"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:textColorHint="#756C6C"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:hint="Password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="16dp"
+                android:padding="8dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPassword"
+                android:textColorHint="#756C6C"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/btn_arraw1"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="faceBook"
+                    android:textSize="16sp"
+                    android:textColor="#3b608c"
+                    android:textStyle="bold"
+                    style="@android:style/Widget.Button"
+                    android:drawablePadding="16dp"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:drawableEnd="@drawable/facebook"
+                    android:background="@drawable/btn_background"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="Google"
+                    android:textSize="16sp"
+                    android:textColor="#3b608c"
+                    android:textStyle="bold"
+                    style="@android:style/Widget.Button"
+                    android:drawablePadding="16dp"
+                    android:padding="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:drawableEnd="@drawable/google"
+                    android:background="@drawable/btn_background"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you new user? Register"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:textColor="#3B608C"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
